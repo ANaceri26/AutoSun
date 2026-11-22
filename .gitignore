@@ -1,0 +1,14 @@
+# KiCad backups and local settings
+solar_car-backups/
+.history/
+*.kicad_prl
+*.lck
+fp-info-cache
+_autosave-*
+~*
+
+# Big simulation output (re-create by running sim/pack_swap.cir in LTspice)
+sim/*.raw
+
+# Personal handoff notes
+solar_car_pcb_context.md

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SolarCar")(type "KiCad")(uri "${KIPRJMOD}/SolarCar.kicad_sym")(options "")(descr "Solar car board symbols"))
+)

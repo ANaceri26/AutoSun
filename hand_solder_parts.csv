@@ -1,0 +1,7 @@
+Ref,Part,Footprint
+J4,MAIN_SWITCH (external toggle),Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+A1,Arduino Nano Every,Module:Arduino_Nano
+J7,"SERVO (GND,5V,SIG)",Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+J8,"HC-SR04 (VCC,TRIG,ECHO,GND)",Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+J9,"IR_RX (SIG,5V,GND)",Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+J10,"I2C spare (GND,5V,SDA,SCL)",Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
