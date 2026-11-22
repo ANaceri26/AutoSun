@@ -1,0 +1,47 @@
+* Pack-swap load switch test: LOAD_A -> LOAD_B handover, Pack A 7.0 V, Pack B 8.3 V
+* Back-to-back AO3401A pair, 100k G-S pull-up, 2N7002 driver, 100R series, 100k pull-down (as on the PCB)
+.param tbreak=5m
+VA PA_int 0 7.0
+RA PA_int PACKA_F 0.15
+VB PB_int 0 8.3
+RB PB_int PACKB_F 0.15
+* ---- LOAD_A ----
+MQ2 PACKA_F G_LA S_LA AO3401A
+MQ3 VMOT    G_LA S_LA AO3401A
+R16 S_LA G_LA 100k
+MQ4 G_LA CG_LA 0 N2N7002
+R17 LOAD_A CG_LA 100
+R18 CG_LA 0 100k
+* ---- LOAD_B ----
+MQ5 PACKB_F G_LB S_LB AO3401A
+MQ6 VMOT    G_LB S_LB AO3401A
+R19 S_LB G_LB 100k
+MQ7 G_LB CG_LB 0 N2N7002
+R20 LOAD_B CG_LB 100
+R21 CG_LB 0 100k
+* ---- VMOT: C17 10u + C18 100n + DRV8833/motors (~0.5 A) ----
+C17 VMOT 0 10u Rser=5m
+C18 VMOT 0 100n
+RLOAD VMOT 0 15
+* ---- Nano GPIO (5 V) ----
+VLA LOAD_A 0 PULSE(0 5 1m 1u 1u 9m)
+VLB LOAD_B 0 PULSE(0 5 {10m+tbreak} 1u 1u 10m)
+* ---- rough models (AO3401A: -30V, ~50mOhm, Vth ~-0.9V; 2N7002: Vth ~2V) ----
+.model AO3401A VDMOS(pchan Vto=-0.9 Kp=25 Rd=15m Rs=10m Rg=5 Cgdmax=250p Cgdmin=40p Cgs=550p Cjo=120p Is=1e-11 Rb=20m)
+.model N2N7002 VDMOS(Vto=2.0 Kp=0.4 Rd=0.5 Rs=0.5 Rg=3 Cgdmax=25p Cgdmin=4p Cgs=35p Cjo=15p Is=1e-12)
+.step param tbreak list 0.2m 0.5m 1m 5m
+.tran 0 {16m+tbreak} 0 1u
+.meas tran Ioff_A10 FIND Id(MQ3) AT=10.1m
+.meas tran Ioff_A50 FIND Id(MQ3) AT=10.5m
+.meas tran VMOT_min MIN V(VMOT) FROM=10m TO={10m+tbreak+0.5m}
+.meas tran IA_reverse MAX I(VA) FROM=9m TO={16m+tbreak}
+.meas tran IB_reverse MAX I(VB) FROM=0 TO={10m+tbreak}
+.meas tran t_off_A WHEN -Id(MQ3)=0.01 TD=10m FALL=1
+.meas tran Toff_A PARAM t_off_A-10m
+.meas tran I2t_B INTEG I(RB)*I(RB) FROM={10m+tbreak} TO={10m+tbreak+0.2m}
+.meas tran t_inrush_end WHEN I(RB)=3 TD={10m+tbreak} FALL=1
+.meas tran Tinrush PARAM t_inrush_end-10m-tbreak
+.meas tran IB_inrush MAX I(RB) FROM={10m+tbreak} TO={10m+tbreak+1m}
+.meas tran IA_inrush MAX I(RA) FROM=1m TO=2m
+.meas tran VMOT_on_B FIND V(VMOT) AT={15.5m+tbreak}
+.end

@@ -1,0 +1,128 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\pack_swap.cir
+Start Time: Sat Nov 21 22:59:57 2026
+
+.step tbreak=0.0002
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step tbreak=0.0005
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step tbreak=0.001
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step tbreak=0.005
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 2.483 seconds.
+
+Files loaded:
+C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\pack_swap.cir
+
+
+Measurement: ioff_a10
+  step	Id(MQ3) 	at
+     1	-0.458674683923	0.0101
+     2	-0.458674683923	0.0101
+     3	-0.458674683923	0.0101
+     4	-0.458674683923	0.0101
+
+Measurement: ioff_a50
+  step	Id(MQ3) 	at
+     1	1.13926514576e-07	0.0105
+     2	-1.60345098266e-06	0.0105
+     3	-1.6125510811e-06	0.0105
+     4	-1.6125510811e-06	0.0105
+
+Measurement: vmot_min
+  step	MIN(V(VMOT) )	FROM	TO
+     1	6.87649440765	0.01	0.0107
+     2	2.02556729317	0.01	0.011
+     3	0.0746751353145	0.01	0.0115
+     4	-1.45153480844e-05	0.01	0.0155
+
+Measurement: ia_reverse
+  step	MAX(I(VA) )	FROM	TO
+     1	2.4251203537	0.009	0.0162
+     2	0.000426604936365	0.009	0.0165
+     3	0.000368090550182	0.009	0.017
+     4	0.000361533369869	0.009	0.021
+
+Measurement: ib_reverse
+  step	MAX(I(VB) )	FROM	TO
+     1	0.000288400740828	0	0.0102
+     2	0.000288400740828	0	0.0105
+     3	0.000288400740828	0	0.011
+     4	0.000288400740828	0	0.015
+
+Measurement: t_off_a
+  step	-Id(MQ3)=0.01 
+     1	0.0102006943362
+     2	0.0103525915842
+     3	0.0103525915842
+     4	0.0103525915842
+
+Measurement: toff_a
+  step	t_off_A-10m
+     1	0.000200694336157
+     2	0.000352591584217
+     3	0.000352591584217
+     4	0.000352591584217
+
+Measurement: i2t_b
+  step	INTEG(I(RB)*I(RB) )	FROM	TO
+     1	0.000741089320975	0.0102	0.0104
+     2	0.000957641389412	0.0105	0.0107
+     3	0.00154566780235	0.011	0.0112
+     4	0.00156861915169	0.015	0.0152
+
+Measurement: t_inrush_end
+  step	I(RB)=3 
+     1	0.0102060361128
+     2	0.0105058888281
+     3	0.0110065715412
+     4	0.0150065795256
+
+Measurement: tinrush
+  step	t_inrush_end-10m-tbreak
+     1	6.03611275291e-06
+     2	5.88882805845e-06
+     3	6.57154121767e-06
+     4	6.57952561996e-06
+
+Measurement: ib_inrush
+  step	MAX(I(RB) )	FROM	TO
+     1	6.2945227623	0.0102	0.0112
+     2	26.4430503845	0.0105	0.0115
+     3	30.7642097473	0.011	0.012
+     4	30.763841629	0.015	0.016
+
+Measurement: ia_inrush
+  step	MAX(I(RA) )	FROM	TO
+     1	24.2584590912	0.001	0.002
+     2	24.2584590912	0.001	0.002
+     3	24.2584590912	0.001	0.002
+     4	24.2584590912	0.001	0.002
+
+Measurement: vmot_on_b
+  step	V(VMOT) 	at
+     1	8.18487453461	0.0157
+     2	8.18487453461	0.016
+     3	8.18487453461	0.0165
+     4	8.18487453461	0.0205
