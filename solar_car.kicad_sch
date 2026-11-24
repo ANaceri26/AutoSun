@@ -6961,7 +6961,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uH >=1.5A"
+		(property "Value" "33uH >=1.5A"
 			(at 98.552 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7005,7 +7005,7 @@
 				)
 			)
 		)
-		(property "MPN" "SRN8040TA-220M"
+		(property "MPN" "SRN8040TA-330M"
 			(at 96.52 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7891,7 +7891,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "150k"
+		(property "Value" "91k"
 			(at 129.032 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14981,7 +14981,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SOLAR_IN (3 panels in series)"
+		(property "Value" "SOLAR_IN (4 panels, 2 pairs)"
 			(at 33.02 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)

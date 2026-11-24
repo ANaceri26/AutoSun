@@ -1558,7 +1558,7 @@
 				)
 			)
 		)
-		(property "Value" "22uH >=1.5A"
+		(property "Value" "33uH >=1.5A"
 			(at 0.1 5.2 0)
 			(layer "F.Fab")
 			(uuid "25a30406-03b7-4f23-8ac1-7dd6a7129165")
@@ -1595,7 +1595,7 @@
 				)
 			)
 		)
-		(property "MPN" "SRN8040TA-220M"
+		(property "MPN" "SRN8040TA-330M"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8324,7 +8324,7 @@
 				)
 			)
 		)
-		(property "Value" "SOLAR_IN (3 panels in series)"
+		(property "Value" "SOLAR_IN (4 panels, 2 pairs)"
 			(at 1.25 4.6 0)
 			(layer "F.Fab")
 			(uuid "964d03cd-1875-4b29-896a-714783ef29a5")
@@ -9002,7 +9002,7 @@
 				)
 			)
 		)
-		(property "Value" "150k"
+		(property "Value" "91k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "299a3081-32fa-46ed-b45b-df4e4a106d20")
