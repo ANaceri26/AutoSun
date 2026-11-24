@@ -6189,7 +6189,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C8545"
 			(at 657.86 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6295,7 +6295,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C8678"
 			(at 271.78 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6398,7 +6398,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 472.44 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -6501,7 +6501,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C21190"
 			(at 132.08 127 0)
 			(hide yes)
 			(show_name no)
@@ -6604,7 +6604,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C12891"
 			(at 27.94 327.66 0)
 			(hide yes)
 			(show_name no)
@@ -6707,7 +6707,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
 			(at 106.68 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -6810,7 +6810,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22775"
 			(at 520.7 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -6913,7 +6913,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25804"
 			(at 675.64 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -7005,7 +7005,7 @@
 				)
 			)
 		)
-		(property "MPN" "SRN8040TA-330M"
+		(property "MPN" "SRN8040-330M"
 			(at 96.52 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7016,7 +7016,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C780189"
 			(at 96.52 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7119,7 +7119,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25804"
 			(at 419.1 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -7222,7 +7222,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15127"
 			(at 71.12 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -7328,7 +7328,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 535.94 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -7431,7 +7431,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23630"
 			(at 617.22 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -7534,7 +7534,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C8678"
 			(at 287.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7637,7 +7637,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2286"
 			(at 449.58 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -7740,7 +7740,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
 			(at 101.6 127 0)
 			(hide yes)
 			(show_name no)
@@ -7843,7 +7843,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14165"
 			(at 294.64 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -7946,7 +7946,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23265"
 			(at 127 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -8049,7 +8049,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25337"
 			(at 655.32 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -8152,7 +8152,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15127"
 			(at 231.14 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -8258,7 +8258,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 693.42 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -8361,7 +8361,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25804"
 			(at 142.24 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -8464,7 +8464,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C50506"
 			(at 535.94 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -8612,7 +8612,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25337"
 			(at 637.54 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -8715,7 +8715,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C116592"
 			(at 444.5 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -8830,7 +8830,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 190.5 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -8933,7 +8933,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C8545"
 			(at 276.86 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -9039,7 +9039,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15127"
 			(at 454.66 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -9145,7 +9145,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 248.92 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -9248,7 +9248,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 632.46 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -9351,7 +9351,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
 			(at 256.54 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -9454,7 +9454,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22775"
 			(at 678.18 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -9557,7 +9557,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 340.36 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -9660,7 +9660,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 154.94 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -9763,7 +9763,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C13585"
 			(at 563.88 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -9866,7 +9866,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C57112"
 			(at 599.44 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -9969,7 +9969,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C347478"
 			(at 60.96 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -10075,7 +10075,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C8678"
 			(at 81.28 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -10281,7 +10281,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 358.14 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -10384,7 +10384,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 238.76 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -10702,7 +10702,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15127"
 			(at 419.1 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -10808,7 +10808,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
 			(at 27.94 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -10911,7 +10911,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22775"
 			(at 297.18 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -10959,7 +10959,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "GREEN (charge done)"
+		(property "Value" "RED (charge done)"
 			(at 146.812 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11014,7 +11014,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2286"
 			(at 144.78 127 0)
 			(hide yes)
 			(show_name no)
@@ -11117,7 +11117,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
 			(at 27.94 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -11220,7 +11220,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14165"
 			(at 317.5 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -11323,7 +11323,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1660"
 			(at 27.94 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -11426,7 +11426,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15127"
 			(at 612.14 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -11532,7 +11532,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
 			(at 581.66 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -11822,7 +11822,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C12891"
 			(at 381 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -11925,7 +11925,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25804"
 			(at 43.18 127 0)
 			(hide yes)
 			(show_name no)
@@ -11984,7 +11984,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 231.14 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12017,7 +12017,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B2B-PH-K-S(LF)(SN)"
 			(at 231.14 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12028,7 +12028,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C131337"
 			(at 231.14 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12131,7 +12131,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15127"
 			(at 195.58 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -12237,7 +12237,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
 			(at 487.68 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -12340,7 +12340,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C131054"
 			(at 154.94 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -12443,7 +12443,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C13585"
 			(at 88.9 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -12546,7 +12546,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 474.98 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -12605,7 +12605,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 269.24 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12638,7 +12638,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B2B-PH-K-S(LF)(SN)"
 			(at 269.24 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12649,7 +12649,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C131337"
 			(at 269.24 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12752,7 +12752,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23178"
 			(at 175.26 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -12855,7 +12855,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C21190"
 			(at 436.88 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -12914,7 +12914,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 528.32 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -12947,7 +12947,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B2B-PH-K-S(LF)(SN)"
 			(at 528.32 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -12958,7 +12958,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C131337"
 			(at 528.32 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -13061,7 +13061,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25804"
 			(at 119.38 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -13229,7 +13229,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 553.72 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -13262,7 +13262,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B2B-PH-K-S(LF)(SN)"
 			(at 553.72 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -13273,7 +13273,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C131337"
 			(at 553.72 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -13376,7 +13376,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 91.44 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -13479,7 +13479,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C13585"
 			(at 134.62 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13582,7 +13582,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23077"
 			(at 401.32 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -13685,7 +13685,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1620"
 			(at 55.88 127 0)
 			(hide yes)
 			(show_name no)
@@ -13788,7 +13788,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22775"
 			(at 139.7 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -13891,7 +13891,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
 			(at 411.48 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -13994,7 +13994,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C3221229"
 			(at 342.9 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -14097,7 +14097,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 220.98 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -14200,7 +14200,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C8545"
 			(at 119.38 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -14306,7 +14306,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C8545"
 			(at 500.38 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -14412,7 +14412,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22787"
 			(at 71.12 127 0)
 			(hide yes)
 			(show_name no)
@@ -14621,7 +14621,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15127"
 			(at 38.1 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -14727,7 +14727,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C5126104"
 			(at 172.72 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -14830,7 +14830,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C8678"
 			(at 73.66 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -14933,7 +14933,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25803"
 			(at 312.42 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -14992,7 +14992,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 35.56 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -15025,7 +15025,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B2B-PH-K-S(LF)(SN)"
 			(at 35.56 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -15036,7 +15036,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C131337"
 			(at 35.56 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -15139,7 +15139,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C12891"
 			(at 363.22 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -15242,7 +15242,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25335"
 			(at 116.84 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -15345,7 +15345,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C21120"
 			(at 86.36 127 0)
 			(hide yes)
 			(show_name no)
@@ -15448,7 +15448,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15127"
 			(at 576.58 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -15554,7 +15554,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C13585"
 			(at 393.7 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -15657,7 +15657,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
 			(at 375.92 53.34 0)
 			(hide yes)
 			(show_name no)
