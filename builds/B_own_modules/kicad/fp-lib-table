@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SolarCarB")(type "KiCad")(uri "${KIPRJMOD}/SolarCarB.pretty")(options "")(descr "Module footprints for build B"))
+)
