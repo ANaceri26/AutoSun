@@ -20,6 +20,7 @@ One circuit board that runs a small solar-powered RC car. It charges the batteri
 | `builds/B_own_modules/` | **Version B, ready to order:** same board, but it uses my own red DRV8833 motor module and MP1584 5 V module instead of factory-soldered chips. Cheaper, with a bit more soldering. Same 3 files to upload. Its KiCad project is in `kicad/`. |
 
 Both folders have `YOU_SOLDER_THESE.csv` listing what you solder yourself. For version B, set the MP1584 to 5.0 V with a multimeter **before** wiring it in.
+| `mechanical/` | For the car body: 3D models (STEP) and AutoCAD drawings (DXF) of both versions, plus a sheet with every size, hole position and height. |
 | `sim/` | An LTspice test of the battery swap. The swap needs at least a 1 ms pause between packs; the code will use 5 ms. |
 | `schematic_preview.png` | A quick picture of the circuit. |
 
