@@ -23,6 +23,20 @@ Both folders have `YOU_SOLDER_THESE.csv` listing what you solder yourself. For v
 | `sim/` | An LTspice test of the battery swap. The swap needs at least a 1 ms pause between packs; the code will use 5 ms. |
 | `schematic_preview.png` | A quick picture of the circuit. |
 
+## Board legend
+Every plug, what goes in it, and which pin is +: see `board_legend.png` in each build folder.
+
+## Winter charging (USB-C, no sun)
+No board change needed. You make a small adapter cable instead of using the solar panels:
+
+1. Get a **USB-C PD trigger board** (a few dollars) and set it to **12 V**. Not 5 V or 9 V: those are too low for the charger.
+2. Solder its output to a female JST-PH cable: **red to +, black to −**.
+3. Unplug the solar panels from **J1** and plug the adapter in. On J1, the **left pin is +**.
+4. Plug a USB-C power bank or wall charger into the trigger board. It must support USB-C PD at **12 V** (look for "12V" in its output specs; some only do 5 V and 9 V).
+5. **Switch the car ON** with the main switch. The Arduino decides which pack charges, so nothing charges while it's off.
+
+The charger then runs at its full rate (about 1 A), so a drained pack fills in about 2–3 hours. If + and − are swapped by mistake, the input diode blocks it: nothing breaks, it just won't charge.
+
 ## Open it
 Install [KiCad 10](https://www.kicad.org/), then open `solar_car.kicad_pro`. In the board view, press `Alt+3` for 3D.
 
