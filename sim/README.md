@@ -32,7 +32,30 @@ BSS138 + pull-ups, tested both directions: Arduino talking and XIAO talking. BSS
 | Car off, USB plugged into the XIAO | 4.89 V | 0.025 mA (leakage) | ✅ the USB can't power the car |
 | Both on | 4.89 V (from USB) | none | ✅ no fight |
 
-## 4. Stress check on the real board file (`design_check.py` → `design_check_results.md`)
+## 4. Charging inputs: USB-C winter charging vs solar (`charging_inputs.cir`)
+The charger chip (CN3722) has no LTspice model, so this is a steady-state model built from its datasheet:
+- 1 A charge limit (200 mV across R3)
+- stops at 8.33 V
+- won't let its input drop below 10.5 V
+- switches off below 6 V
+- about 90 % efficient
+
+The pack is modelled half charged (7.4 V).
+
+| Input into J1 | Charger input | Into the battery | Drawn from the source | Verdict |
+|---|---|---|---|---|
+| **USB-C PD trigger, 12 V** | 11.6 V | **1.00 A** (full speed) | 0.75 A (about 9 W) | ✅ |
+| Trigger set to 9 V | 8.9 V | 0 A | 0 A | ❌ no charging (harmless) |
+| Plain 5 V USB | 4.9 V | 0 A | 0 A | ❌ no charging (harmless) |
+| Solar, 2 pairs, full sun | 10.5 V | 0.41 A | 0.33 A | ✅ |
+| Solar, 2 pairs, half sun | 10.5 V | 0.20 A | 0.16 A | ✅ |
+
+- A 20 W USB-C PD power bank gives up to 1.67 A at 12 V, so the 0.75 A draw is well inside that.
+- D1 warms by 0.24 W.
+- The coil's peak current is about 1.1 A, well under its 1.9 A saturation point.
+- A drained pack charges in about 2–2.5 hours.
+
+## 5. Stress check on the real board file (`design_check.py` → `design_check_results.md`)
 - **Voltage:** every chip, transistor, diode and capacitor is inside its datasheet maximum with the real wiring. **Result: PASS.**
 - **Never wire all 4 solar panels in a row** (about 28 V). That puts the charger chip right at its 30 V limit. Always use 2 pairs (about 14 V).
 - **Copper vs current:** every power track carries its worst-case current with **less than 10 °C of warming**. After this check I widened the battery, 5 V-chip and motor-power tracks, and made the main 5 V trunk 1.0 mm.

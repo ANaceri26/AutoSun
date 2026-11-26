@@ -1,0 +1,96 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\charging_inputs.cir
+Start Time: Thu Nov 26 00:21:30 2026
+
+.step src=1
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step src=2
+Direct Newton iteration succeeded in finding operating point.
+
+.step src=3
+Direct Newton iteration succeeded in finding operating point.
+
+.step src=4
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Starting Gmin stepping level 2
+Gmin stepping level 2 failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient succeeded in finding the operating point at 322.179 ms
+
+.step src=5
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+Total elapsed time: 1.177 seconds.
+
+Files loaded:
+C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\charging_inputs.cir
+C:\Users\Naceri\AppData\Local\LTspice\lib\cmp\standard.dio
+
+
+Measurement: vcc
+  step	V(VCC) 	at
+     1	11.5623788834	0.019
+     2	8.89519500732	0.019
+     3	4.91151428223	0.019
+     4	10.5204381943	0.019
+     5	10.5098619461	0.019
+
+Measurement: i_batt
+  step	V(IBT) 	at
+     1	1	0.019
+     2	0	0.019
+     3	0	0.019
+     4	0.408767640591	0.019
+     5	0.197244480252	0.019
+
+Measurement: i_in
+  step	I(Bsrc) 	at
+     1	0.745908796787	0.019
+     2	0.000889519462362	0.019
+     3	0.000491151411552	0.019
+     4	0.326699912548	0.019
+     5	0.156801626086	0.019
+
+Measurement: p_in
+  step	-I(Bsrc)*V(SOLP) 	at
+     1	-8.86744879155	0.019
+     2	-0.0080055563976	0.019
+     3	-0.00245572075688	0.019
+     4	-3.53006026446	0.019
+     5	-1.68824022186	0.019
+
+Measurement: p_batt
+  step	V(IBT)*V(BAT) 	at
+     1	7.75	0.019
+     2	0	0.019
+     3	0	0.019
+     4	3.08336247126	0.019
+     5	1.47322604993	0.019
+
+Measurement: p_d1
+  step	V(SOLP,VCC)*I(D1) 	at
+     1	0.242968670667	0.019
+     2	9.31073170767e-05	0.019
+     3	4.34235843039e-05	0.019
+     4	0.0930340264193	0.019
+     5	0.0402767787679	0.019

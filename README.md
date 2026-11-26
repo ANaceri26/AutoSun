@@ -32,7 +32,7 @@ Every plug, what goes in it, and which pin is +: see `board_legend.png` in each 
 ## Winter charging (USB-C, no sun)
 No board change needed. You make a small adapter cable instead of using the solar panels:
 
-1. Get a **USB-C PD trigger board** (a few dollars) and set it to **12 V**. Not 5 V or 9 V: those are too low for the charger.
+1. Get a **USB-C PD trigger board that outputs a fixed 12 V** (a few dollars). Fixed 12 V boards can't be set wrong. On adjustable ones, 5 V or 9 V just won't charge (simulated in `sim/charging_inputs.cir`).
 2. Solder its output to a female JST-PH cable: **red to +, black to −**.
 3. Unplug the solar panels from **J1** and plug the adapter in. On J1, the **left pin is +**.
 4. Plug a USB-C power bank or wall charger into the trigger board. It must support USB-C PD at **12 V** (look for "12V" in its output specs; some only do 5 V and 9 V).

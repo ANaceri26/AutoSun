@@ -1,0 +1,33 @@
+* Charging test: what reaches the battery from each input, through J1 -> D1 (SS34) -> CN3722 charger -> pack
+* CN3722 behaviour from its datasheet (no vendor model exists), averaged/steady-state:
+*   - charge current limited to 200 mV / R3(0.2) = 1.0 A ; stops at 8.33 V (R4/R5)
+*   - MPPT: won't let its input (VCC) fall below 1.04 x (1 + 91k/10k) = 10.5 V
+*   - off below UVLO (6.0 V) and in sleep unless VCC > Vbat + 0.32 V ; ~90 % efficient
+* Pack: 2 cells half charged = 7.4 V, 0.2 ohm cells + 0.15 ohm BMS/fuse/switch
+* src: 1 = USB-C trigger 12 V | 2 = trigger on 9 V (wrong) | 3 = 5 V (wrong) | 4 = sun, 2 pairs full sun | 5 = 2 pairs half sun
+.param src=1
+.param Vpd={if(src==1,12,if(src==2,9,5))}
+.param Isc={if(src==4,0.36,0.18)} Voc={if(src==4,13.4,13.0)}
+* input source: USB-C trigger (0.15 ohm cable) or the 2-pair solar array (I-V curve fitted to 5.5 V/160 mA panels, Voc ~6.7 V each)
+Bsrc 0 SOLP I=if(src<=3, max((Vpd-V(SOLP))/0.15,0), max(Isc*(1-exp((V(SOLP)-Voc)/1.09)),0))
+D1 SOLP VCC MBRS340
+C1 VCC 0 10u
+Rq VCC 0 10k
+* charger "brain": wanted battery current
+Bon ON 0 V=if(V(VCC)>6.0 & V(VCC)>V(BAT)+0.32,1,0)
+Bibt IBT 0 V=V(ON)*min(1.0, min(max(0, 20*(V(VCC)-10.5)), max(0, 20*(8.33-V(BAT)))))
+* power transfer: input draws Pout/0.9
+Bin VCC 0 I=V(IBT)*V(BAT)/(0.9*max(V(VCC),1))
+Bout 0 BAT I=V(IBT)
+Rb BAT BI 0.35
+Vb BI 0 7.4
+.lib standard.dio
+.step param src list 1 2 3 4 5
+.tran 0 20m 0 10u
+.meas tran VCC     FIND V(VCC) AT=19m
+.meas tran I_batt  FIND V(IBT) AT=19m
+.meas tran I_in    FIND I(Bsrc) AT=19m
+.meas tran P_in    FIND -I(Bsrc)*V(SOLP) AT=19m
+.meas tran P_batt  FIND V(IBT)*V(BAT) AT=19m
+.meas tran P_D1    FIND V(SOLP,VCC)*I(D1) AT=19m
+.end
