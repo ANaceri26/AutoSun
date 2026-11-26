@@ -49,13 +49,29 @@ The pack is modelled half charged (7.4 V).
 | Plain 5 V USB | 4.9 V | 0 A | 0 A | ❌ no charging (harmless) |
 | Solar, 2 pairs, full sun | 10.5 V | 0.41 A | 0.33 A | ✅ |
 | Solar, 2 pairs, half sun | 10.5 V | 0.20 A | 0.16 A | ✅ |
+| USB-C trigger, 15 V | 14.6 V | 1.00 A | 0.59 A | ✅ (works too) |
+| USB-C trigger, 20 V | 19.6 V | 1.00 A | 0.44 A | ✅ (works too) |
 
+- **Why 12 V:** it's the lowest voltage that charges (the charger needs more than about 10.5 V), and almost every 18–20 W power bank or charger offers it. 15 V and 20 V work too, but usually only on bigger 45 W+ chargers.
 - A 20 W USB-C PD power bank gives up to 1.67 A at 12 V, so the 0.75 A draw is well inside that.
 - D1 warms by 0.24 W.
 - The coil's peak current is about 1.1 A, well under its 1.9 A saturation point.
 - A drained pack charges in about 2–2.5 hours.
 
-## 5. Stress check on the real board file (`design_check.py` → `design_check_results.md`)
+## 5. Cables: JST-PH 2.0 pigtails, 22 AWG, 80 mm (`cables.cir`)
+Worst-case current through each cable. The 2 JST-PH contacts are taken at their datasheet maximum (20 mΩ each), plus the extra wire you'd add to reach each part.
+
+| Cable | Current | Voltage lost | Heat | Verdict |
+|---|---|---|---|---|
+| Battery pack (+5 cm to the BMS) | 2.0 A | 0.11 V | 0.22 W | ✅ |
+| Motor (+15 cm) | 0.6 A | 0.04 V | 0.02 W | ✅ |
+| Solar (+30 cm) | 0.33 A | 0.03 V | 0.01 W | ✅ |
+| USB-C trigger | 0.75 A | 0.04 V | 0.03 W | ✅ |
+
+- JST-PH contacts are rated 2 A, and normal driving is about 0.35 A.
+- Keeping each pack's worst case at 2 A relies on one code rule: **limit the steering servo's angle so it never pushes against its end stop.** A stalled servo pulls over 1 A.
+
+## 6. Stress check on the real board file (`design_check.py` → `design_check_results.md`)
 - **Voltage:** every chip, transistor, diode and capacitor is inside its datasheet maximum with the real wiring. **Result: PASS.**
 - **Never wire all 4 solar panels in a row** (about 28 V). That puts the charger chip right at its 30 V limit. Always use 2 pairs (about 14 V).
 - **Copper vs current:** every power track carries its worst-case current with **less than 10 °C of warming**. After this check I widened the battery, 5 V-chip and motor-power tracks, and made the main 5 V trunk 1.0 mm.

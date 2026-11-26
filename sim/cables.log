@@ -1,0 +1,22 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\cables.cir
+Start Time: Thu Nov 26 00:27:02 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.021 seconds.
+
+Files loaded:
+C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\cables.cir
+
+drop_pack: V(P1) =0.107560001314 at 5e-06
+drop_motor: V(M1) =0.038628000766 at 5e-06
+drop_solar: V(S1) =0.0264924000949 at 5e-06
+drop_usb: V(U1) =0.0363599993289 at 5e-06
+heat_pack: V(P1)*2.0 =0.215120002627 at 5e-06
+heat_motor: V(M1)*0.6 =0.0231768004596 at 5e-06
+heat_solar: V(S1)*0.33 =0.00874249203131 at 5e-06
+heat_usb: V(U1)*0.75 =0.0272699994966 at 5e-06

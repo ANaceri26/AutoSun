@@ -1,0 +1,27 @@
+* JST-PH 2.0 pigtail cables (elechawk, 22 AWG silicone, 80 mm) - voltage drop and heat at worst-case current
+* 22 AWG copper = 53 mohm/m. Each cable = 2 wires (out and back). JST-PH contact: 20 mohm max (datasheet, after use),
+* 2 contacts per wire end at the board plug. Extra wire you add (to reach panels/motors) is also 22 AWG.
+.param rw=0.053 rc=0.020
+* name: current, total one-way wire length (m)
+* pack: 2.0 A worst (driving + switching), 80 mm pigtail + 50 mm to the BMS
+Ipack 0 P1 2.0
+Rpack P1 0 {2*rw*0.13 + 2*rc}
+* motor: 0.6 A (driver limit), 80 mm + 150 mm to the motor
+Imot 0 M1 0.6
+Rmot M1 0 {2*rw*0.23 + 2*rc}
+* solar: 0.33 A full sun, 80 mm + 300 mm to the panels
+Isol 0 S1 0.33
+Rsol S1 0 {2*rw*0.38 + 2*rc}
+* USB-C trigger: 0.75 A, 80 mm + 0
+Iusb 0 U1 0.75
+Rusb U1 0 {2*rw*0.08 + 2*rc}
+.tran 0 10u 0 1u
+.meas tran drop_pack  FIND V(P1) AT=5u
+.meas tran drop_motor FIND V(M1) AT=5u
+.meas tran drop_solar FIND V(S1) AT=5u
+.meas tran drop_usb   FIND V(U1) AT=5u
+.meas tran heat_pack  FIND V(P1)*2.0 AT=5u
+.meas tran heat_motor FIND V(M1)*0.6 AT=5u
+.meas tran heat_solar FIND V(S1)*0.33 AT=5u
+.meas tran heat_usb   FIND V(U1)*0.75 AT=5u
+.end

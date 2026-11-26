@@ -1,6 +1,6 @@
 LTspice 26.0.2 for Windows
 Circuit: C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\charging_inputs.cir
-Start Time: Thu Nov 26 00:21:30 2026
+Start Time: Thu Nov 26 00:26:31 2026
 
 .step src=1
 solver = Normal
@@ -40,7 +40,13 @@ Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip a
 Starting source stepping with srcstepmethod=0
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 1.177 seconds.
+
+.step src=6
+Direct Newton iteration succeeded in finding operating point.
+
+.step src=7
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 1.441 seconds.
 
 Files loaded:
 C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\charging_inputs.cir
@@ -54,6 +60,8 @@ Measurement: vcc
      3	4.91151428223	0.019
      4	10.5204381943	0.019
      5	10.5098619461	0.019
+     6	14.5986318588	0.019
+     7	19.6359195709	0.019
 
 Measurement: i_batt
   step	V(IBT) 	at
@@ -62,6 +70,8 @@ Measurement: i_batt
      3	0	0.019
      4	0.408767640591	0.019
      5	0.197244480252	0.019
+     6	1	0.019
+     7	1	0.019
 
 Measurement: i_in
   step	I(Bsrc) 	at
@@ -70,6 +80,8 @@ Measurement: i_in
      3	0.000491151411552	0.019
      4	0.326699912548	0.019
      5	0.156801626086	0.019
+     6	0.591317277508	0.019
+     7	0.44050231576	0.019
 
 Measurement: p_in
   step	-I(Bsrc)*V(SOLP) 	at
@@ -78,6 +90,8 @@ Measurement: p_in
      3	-0.00245572075688	0.019
      4	-3.53006026446	0.019
      5	-1.68824022186	0.019
+     6	-8.81731083773	0.019
+     7	-8.78093956141	0.019
 
 Measurement: p_batt
   step	V(IBT)*V(BAT) 	at
@@ -86,6 +100,8 @@ Measurement: p_batt
      3	0	0.019
      4	3.08336247126	0.019
      5	1.47322604993	0.019
+     6	7.75	0.019
+     7	7.75	0.019
 
 Measurement: p_d1
   step	V(SOLP,VCC)*I(D1) 	at
@@ -94,3 +110,5 @@ Measurement: p_d1
      3	4.34235843039e-05	0.019
      4	0.0930340264193	0.019
      5	0.0402767787679	0.019
+     6	0.184887591635	0.019
+     7	0.131271518353	0.019

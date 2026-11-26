@@ -4,12 +4,12 @@
 *   - MPPT: won't let its input (VCC) fall below 1.04 x (1 + 91k/10k) = 10.5 V
 *   - off below UVLO (6.0 V) and in sleep unless VCC > Vbat + 0.32 V ; ~90 % efficient
 * Pack: 2 cells half charged = 7.4 V, 0.2 ohm cells + 0.15 ohm BMS/fuse/switch
-* src: 1 = USB-C trigger 12 V | 2 = trigger on 9 V (wrong) | 3 = 5 V (wrong) | 4 = sun, 2 pairs full sun | 5 = 2 pairs half sun
+* src: 1 = USB-C trigger 12 V | 2 = trigger on 9 V (wrong) | 3 = 5 V (wrong) | 4 = sun, 2 pairs full sun | 5 = 2 pairs half sun | 6 = 15 V | 7 = 20 V
 .param src=1
-.param Vpd={if(src==1,12,if(src==2,9,5))}
+.param Vpd={if(src==1,12,if(src==2,9,if(src==3,5,if(src==6,15,20))))}
 .param Isc={if(src==4,0.36,0.18)} Voc={if(src==4,13.4,13.0)}
 * input source: USB-C trigger (0.15 ohm cable) or the 2-pair solar array (I-V curve fitted to 5.5 V/160 mA panels, Voc ~6.7 V each)
-Bsrc 0 SOLP I=if(src<=3, max((Vpd-V(SOLP))/0.15,0), max(Isc*(1-exp((V(SOLP)-Voc)/1.09)),0))
+Bsrc 0 SOLP I=if(src<=3 | src>=6, max((Vpd-V(SOLP))/0.15,0), max(Isc*(1-exp((V(SOLP)-Voc)/1.09)),0))
 D1 SOLP VCC MBRS340
 C1 VCC 0 10u
 Rq VCC 0 10k
@@ -22,7 +22,7 @@ Bout 0 BAT I=V(IBT)
 Rb BAT BI 0.35
 Vb BI 0 7.4
 .lib standard.dio
-.step param src list 1 2 3 4 5
+.step param src list 1 2 3 4 5 6 7
 .tran 0 20m 0 10u
 .meas tran VCC     FIND V(VCC) AT=19m
 .meas tran I_batt  FIND V(IBT) AT=19m
