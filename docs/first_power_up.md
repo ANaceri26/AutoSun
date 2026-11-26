@@ -14,6 +14,9 @@ Do these **in order**. Each step adds one thing. If a step fails, stop there and
 2. Measure **+5V** (any 5V header pin to GND): it should read **4.9–5.1 V**. The red **5V LED** should be on.
 3. Current with nothing else connected should be **under about 20 mA**. If it hits the limit, there's a short. Stop.
 
+## Uploading code: keep the car switched ON
+The Nano Every's USB feeds its 5V pin through a diode. If you plug USB in while the car is **off**, your PC tries to power the whole 5 V side (Arduino, XIAO, servo, sensors). That's harmless, but a moving servo can make the PC's USB port cut out. **Upload with the car switched on** (a pack plugged in), or unplug the servo while uploading. The same goes for the XIAO's USB-C.
+
 ## 2. Add the Arduino
 1. Solder the Nano Every. Power up again: the current rises about 20–40 mA, and +5V stays at about 5 V.
 2. Upload a "blink" test. ✅ means the 5 V supply and the Arduino are good.
