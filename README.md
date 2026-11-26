@@ -20,8 +20,8 @@ One circuit board that runs a small solar-powered RC car. It charges the batteri
 | `builds/A_full_assembly/` | **Version A, ready to order:** the factory builds and solders everything except the Arduino and pin headers. Upload `gerbers_upload_this.zip`, `BOM_JLCPCB.csv` and `CPL_JLCPCB.csv`. |
 | `builds/B_own_modules/` | **Version B (dropped, kept for reference only):** same board, but it uses my own red DRV8833 motor module and MP1584 5 V module instead of factory-soldered chips. Cheaper, with a bit more soldering. Same 3 files to upload. Its KiCad project is in `kicad/`. |
 | `mechanical/` | For the car body: 3D models (STEP) and AutoCAD drawings (DXF), plus a sheet with every size, hole position and height. |
-| `docs/` | Plans, like the phone dashboard. |
-| `sim/` | An LTspice test of the battery swap. The swap needs at least a 1 ms pause between packs; the code will use 5 ms. |
+| `docs/` | The phone dashboard plan, and **first power-up steps** (follow these when the board arrives). |
+| `sim/` | Tests: LTspice simulations (battery swap, level shifter, XIAO power) and a voltage/current stress check of the whole board. All pass. |
 | `schematic_preview.png` | A quick picture of the circuit. |
 
 The build folder has `YOU_SOLDER_THESE.csv` listing what you solder yourself: the Arduino, the XIAO and the pin headers.

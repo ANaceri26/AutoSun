@@ -1,0 +1,53 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\xiao_power_path.cir
+Start Time: Wed Nov 25 23:36:25 2026
+
+.step case=1
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=2
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=3
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.626 seconds.
+
+Files loaded:
+C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\xiao_power_path.cir
+C:\Users\Naceri\AppData\Local\LTspice\lib\cmp\standard.dio
+
+
+Measurement: x5_min
+  step	MIN(V(X5) )	FROM	TO
+     1	4.68976211548	0.001	0.006
+     2	4.89149284363	0.001	0.006
+     3	4.89174890518	0.001	0.006
+
+Measurement: i_from_car_avg
+  step	AVG(I(D5) )	FROM	TO
+     1	0.190380001539	0.001	0.006
+     2	-2.26000069755e-05	0.001	0.006
+     3	0.000289488729599	0.001	0.006
+
+Measurement: i_backfeed_into_car
+  step	MIN(I(D5) )	FROM	TO
+     1	0.120000004768	0.001	0.006
+     2	-2.49446875387e-05	0.001	0.006
+     3	4.07421321142e-05	0.001	0.006
+
+Measurement: i_from_usb_avg
+  step	AVG(I(Dusb) )	FROM	TO
+     1	-4.7254944588e-09	0.001	0.006
+     2	0.190402599715	0.001	0.006
+     3	0.190090511219	0.001	0.006
+
+Measurement: d5_power
+  step	AVG(V(P5,X5)*I(D5) )	FROM	TO
+     1	0.0514337811565	0.001	0.006
+     2	0.000111666045409	0.001	0.006
+     3	2.7461702213e-05	0.001	0.006

@@ -12,3 +12,5 @@ sim/*.raw
 
 # Personal handoff notes
 solar_car_pcb_context.md
+sim/*.db
+builds/*.drc.txt

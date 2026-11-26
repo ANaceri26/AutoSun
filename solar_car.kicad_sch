@@ -16048,7 +16048,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 624.33 382.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16103,7 +16103,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25804"
+		(property "LCSC" "C23162"
 			(at 622.30 381.00 0)
 			(hide yes)
 			(show_name no)
@@ -16161,7 +16161,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 634.49 382.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16216,7 +16216,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25804"
+		(property "LCSC" "C23162"
 			(at 632.46 381.00 0)
 			(hide yes)
 			(show_name no)
@@ -16274,7 +16274,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 644.65 382.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16329,7 +16329,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25804"
+		(property "LCSC" "C23162"
 			(at 642.62 381.00 0)
 			(hide yes)
 			(show_name no)
@@ -16387,7 +16387,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 654.81 382.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16442,7 +16442,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25804"
+		(property "LCSC" "C23162"
 			(at 652.78 381.00 0)
 			(hide yes)
 			(show_name no)

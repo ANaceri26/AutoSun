@@ -1,0 +1,23 @@
+* XIAO ESP32-S3 power path: car +5V rail --D5 (SS34 ~ MBRS340)--> XIAO 5V pin (= XIAO USB VBUS)
+* Rail load (Nano, sensors, idle servo) ~ 50 ohm. XIAO: 120 mA average + Wi-Fi bursts to 350 mA.
+* case: 1 = car on, no USB | 2 = car off, USB plugged in | 3 = car on and USB plugged in
+.param case=1
+Vcar CARIN 0 {if(case==2,0,5.0)}
+Rbuck CARIN P5 0.05
+Rrail P5 0 50
+D5 P5 X5 MBRS340
+Vusb USBIN 0 {if(case==1,0,5.0)}
+Rusb USBIN USBV 0.3
+* the PC's USB port cannot sink current: model it as a diode-isolated source (worst case for back-feed is a plain wire, checked by I(D5) below)
+Dusb USBV X5 IDEAL
+.model IDEAL D(Ron=0.01 Roff=1e9 Vfwd=0)
+Ixiao X5 0 PULSE(0.12 0.35 1m 10u 10u 0.5m 2m)
+.lib standard.dio
+.step param case list 1 2 3
+.tran 0 6m 0 1u
+.meas tran X5_min MIN V(X5) FROM=1m TO=6m
+.meas tran I_from_car_avg AVG I(D5) FROM=1m TO=6m
+.meas tran I_backfeed_into_car MIN I(D5) FROM=1m TO=6m
+.meas tran I_from_usb_avg AVG I(Dusb) FROM=1m TO=6m
+.meas tran D5_power AVG V(P5,X5)*I(D5) FROM=1m TO=6m
+.end

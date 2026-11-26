@@ -1,0 +1,38 @@
+* I2C level shifter test: BSS138 (Q14) + 10k pull-ups (R35 to 3V3, R37 to 5V), as on the PCB
+* Two cases in one run: Nano (5V side) drives the bus, then the XIAO (3.3V side) drives it.
+* Bus capacitance 30 pF (realistic) and 100 pF (pessimistic), pull-ups 4.7k vs 10k. Stepped: BSS138 threshold 0.8 / 1.3 / 1.6 V and bit rate.
+.param vth=1.3 f=100k rpu=4.7k cb=100p
+V5 P5 0 5.0
+V3 P3 0 3.3
+R37 P5 HV {rpu}
+R35 P3 LV {rpu}
+CHV HV 0 {cb}
+CLV LV 0 {cb}
+MQ14 HV P3 LV BSS138
+* open-drain drivers (25 ohm when on): Nano on HV side for the first half, XIAO on LV side for the second half
+MNANO HV GN 0 NDRV
+MXIAO LV GX 0 NDRV
+VGN GN 0 PULSE(0 5 {1/f} 5n 5n {0.5/f} {1/f} 4)
+VGX GX 0 PULSE(0 5 {6/f} 5n 5n {0.5/f} {1/f} 4)
+.model NDRV VDMOS(Vto=1 Kp=20 Rd=25)
+* BSS138 (onsemi BSS138LT1G datasheet: Vth 0.85-1.5V, Rds(on) 3.5 ohm max @5V, Ciss 27pF), with body diode
+.model BSS138 VDMOS(Vto={vth} Kp=0.35 Rd=0.4 Rs=0.4 Rg=5 Cgdmax=8p Cgdmin=2p Cgs=20p Cjo=12p Is=1e-12 Rb=0.5 lambda=0.02)
+.step param vth list 0.8 1.6
+.step param rpu list 4.7k 10k
+.step param cb list 30p 100p
+.tran 0 {11/f} 0 2n
+* ---- Nano drives (cycle 2, t = 1/f .. 2/f) ----
+.meas tran LV_low_nano  FIND V(LV) AT={1.4/f}
+.meas tran HV_low_nano  FIND V(HV) AT={1.4/f}
+.meas tran LV_high_nano FIND V(LV) AT={1.95/f}
+.meas tran HV_high_nano FIND V(HV) AT={1.95/f}
+.meas tran LV_rise_nano TRIG V(LV) VAL=0.99 RISE=1 TD={1.4/f} TARG V(LV) VAL=2.31 RISE=1 TD={1.4/f}
+.meas tran HV_rise_nano TRIG V(HV) VAL=1.5 RISE=1 TD={1.4/f} TARG V(HV) VAL=3.5 RISE=1 TD={1.4/f}
+* ---- XIAO drives (cycle 7, t = 6/f .. 7/f) ----
+.meas tran HV_low_xiao  FIND V(HV) AT={6.4/f}
+.meas tran LV_low_xiao  FIND V(LV) AT={6.4/f}
+.meas tran HV_high_xiao FIND V(HV) AT={6.95/f}
+.meas tran LV_high_xiao FIND V(LV) AT={6.95/f}
+.meas tran HV_rise_xiao TRIG V(HV) VAL=1.5 RISE=1 TD={6.4/f} TARG V(HV) VAL=3.5 RISE=1 TD={6.4/f}
+.meas tran LV_max MAX V(LV)
+.end

@@ -1,6 +1,6 @@
 LTspice 26.0.2 for Windows
 Circuit: C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\pack_swap.cir
-Start Time: Sat Nov 21 22:59:57 2026
+Start Time: Wed Nov 25 23:36:15 2026
 
 .step tbreak=0.0002
 solver = Normal
@@ -30,7 +30,7 @@ Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 2.483 seconds.
+Total elapsed time: 1.104 seconds.
 
 Files loaded:
 C:\Users\Naceri\Documents\PROJECTS\AutoSun\solar_car_pcb\sim\pack_swap.cir
