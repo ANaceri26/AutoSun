@@ -1,6 +1,6 @@
 # AutoSUN board: files for the car body (CAD)
 
-Two board versions. Both are the **same size, shape and hole positions**; only the parts on top differ.
+**Version A is the one being built** (version B was dropped). Version B's files are kept only for reference.
 
 ![Version A](AutoSUN_A_3d_view.png)
 
@@ -8,7 +8,7 @@ Two board versions. Both are the **same size, shape and hole positions**; only t
 | File | What it is | Opens in |
 |---|---|---|
 | **`AutoSUN_A_simple.step`** | **Start here.** Simple 3D model of version A: one part (board with holes + plain blocks for every part, real sizes and heights) | SolidWorks, Fusion 360, Inventor, FreeCAD, AutoCAD |
-| **`AutoSUN_B_simple.step`** | Same for version B | Same |
+| `AutoSUN_B_simple.step` | Version B (dropped, reference only) | Same |
 | `AutoSUN_A_detailed_assembly.step` / `..._B_...` | Detailed version, opens as an assembly of ~90 small parts. Only needed for a realistic render. | Same |
 | `AutoSUN_A_outline.dxf` | Flat 2D drawing: outline, 4 holes, plug locations | AutoCAD and any 2D CAD |
 | `AutoSUN_B_outline.dxf` | Same for version B (adds the motor module and 5 V module spots) | Same |
@@ -28,6 +28,7 @@ All files are in **millimetres**. The origin (0, 0) is the **bottom-left corner*
 | Board itself | 1.6 mm |
 | Above the board (tallest) | **~9 mm**: the pin headers (servo, sensor, switch plugs) and the Arduino's pins |
 | Arduino Nano Every (top of its USB plug) | ~7 mm |
+| XIAO ESP32-S3 on its pins | ~7 mm (pins ~9 mm) |
 | White battery/solar/motor plugs (J1, J2, J3, J5, J6) | ~6 mm, plus ~5 mm more once a cable is plugged in |
 | Version B motor module (U4), raised on its pins | module ~5 mm, its pins ~9 mm |
 | **Below the board** | solder pins stick out **~3 mm**, so use **standoffs of 5 mm or more** |
@@ -44,8 +45,9 @@ Version B also has a loose **MP1584 5 V module (22 × 17 × 4 mm)**. It's wired 
 | J4 On/off switch | 8.5, 28.0 | Left edge, wires to a toggle switch |
 | J5 Left motor | 29.5, 10.5 | Bottom edge |
 | J6 Right motor | 38.5, 10.5 | Bottom edge |
-| J7 Servo | 48.0, 12.0 | Bottom-right |
-| J8 Ultrasonic sensor | 48.0, 24.0 | Bottom-right |
-| J9 IR receiver | 58.5, 12.0 | Bottom-right |
-| J10 Spare I2C | 48.0, 18.0 | Bottom-right |
+| J8 Ultrasonic sensor | 68.0, 71.5 | Right edge, pins run downward |
+| J9 IR receiver | 68.0, 60.0 | Right edge |
+| J7 Servo | 68.0, 51.0 | Right edge |
+| J10 Spare I2C | 68.0, 42.0 | Right edge |
+| XIAO ESP32-S3 (Wi-Fi) | centre 55.0, 12.4 | Bottom-right. **USB-C opening at the bottom edge**, centred at x = 55.0 |
 | Arduino USB opening | centre ≈ 54.1, 70.9 | Plug goes in from the top edge; leave a cut-out for the cable |

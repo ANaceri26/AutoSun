@@ -13,6 +13,107 @@
 		(comment 2 "Connections are made with net labels at pin ends (no wires).")
 	)
 	(lib_symbols
+		(symbol "SolarCar:XIAO_ESP32S3"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(property "Reference" "U" (at -10.16 11.43 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "XIAO_ESP32S3" (at -10.16 -11.43 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Seeed XIAO ESP32-S3 (Wi-Fi radio for the phone dashboard)" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "XIAO_ESP32S3_0_1"
+				(rectangle (start -10.16 -10.16) (end 10.16 10.16) (stroke (width 0.254) (type default)) (fill (type background)))
+			)
+			(symbol "XIAO_ESP32S3_1_1"
+				(pin passive line
+					(at -12.7 7.62 0)
+					(length 2.54)
+					(name "D0" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "D1" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "D2" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at -12.7 0.0 0)
+					(length 2.54)
+					(name "D3" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "D4_SDA" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "D5_SCL" (effects (font (size 1.27 1.27))))
+					(number "6" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 2.54)
+					(name "D6_TX" (effects (font (size 1.27 1.27))))
+					(number "7" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at 12.7 7.62 180)
+					(length 2.54)
+					(name "5V" (effects (font (size 1.27 1.27))))
+					(number "14" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "GND" (effects (font (size 1.27 1.27))))
+					(number "13" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "3V3" (effects (font (size 1.27 1.27))))
+					(number "12" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at 12.7 0.0 180)
+					(length 2.54)
+					(name "D10" (effects (font (size 1.27 1.27))))
+					(number "11" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "D9" (effects (font (size 1.27 1.27))))
+					(number "10" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "D8" (effects (font (size 1.27 1.27))))
+					(number "9" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at 12.7 -7.62 180)
+					(length 2.54)
+					(name "D7_RX" (effects (font (size 1.27 1.27))))
+					(number "8" (effects (font (size 1.27 1.27))))
+				)
+			)
+		)
 		(symbol "SolarCar:C"
 			(pin_numbers
 				(hide yes)
@@ -15682,6 +15783,915 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "SolarCar:NMOS")
+		(at 601.98 381.00 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "61a068f3-d55a-4471-8dd7-3f7e85e5b9a4")
+		(property "Reference" "Q14"
+			(at 598.17 375.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS138"
+			(at 598.17 387.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 601.98 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 601.98 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "N-ch MOSFET, I2C level shifter (1=G,2=S,3=D)"
+			(at 601.98 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BSS138LT1G"
+			(at 601.98 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C82045"
+			(at 601.98 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "da285ed6-318f-45df-b21e-c878aaef6072")
+		)
+		(pin "3"
+			(uuid "5aaab569-15b9-4edc-9040-f63dbdd2a6a3")
+		)
+		(pin "2"
+			(uuid "c060114b-07ab-40a5-83b6-da8c472b26d8")
+		)
+		(instances
+			(project "solar_car"
+				(path "/ee6cd591-c61e-556b-b77e-9a15f3bfb706"
+					(reference "Q14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "3V3_X"
+		(at 595.63 379.73 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "8c80dd5e-e8ab-43f8-958e-e38f982f2d2a")
+	)
+	(label "SDA_3V3"
+		(at 608.33 382.27 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "738ec5ec-4cf0-49be-991b-c0941eb58d41")
+	)
+	(label "SDA"
+		(at 608.33 379.73 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "6e35434e-0d24-43f9-9e69-73efcec0139b")
+	)
+	(symbol
+		(lib_id "SolarCar:NMOS")
+		(at 601.98 401.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72f2128a-306a-4ad6-837b-9ee689cf67d1")
+		(property "Reference" "Q15"
+			(at 598.17 396.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS138"
+			(at 598.17 407.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 601.98 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 601.98 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "N-ch MOSFET, I2C level shifter (1=G,2=S,3=D)"
+			(at 601.98 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BSS138LT1G"
+			(at 601.98 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C82045"
+			(at 601.98 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "be147fae-1f40-4eb5-ba41-f47ad6240746")
+		)
+		(pin "3"
+			(uuid "3eff873c-8d09-441a-9478-8636fee03c8b")
+		)
+		(pin "2"
+			(uuid "0fcc9131-d33e-430a-91bb-c5f9920f7f1f")
+		)
+		(instances
+			(project "solar_car"
+				(path "/ee6cd591-c61e-556b-b77e-9a15f3bfb706"
+					(reference "Q15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "3V3_X"
+		(at 595.63 400.05 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "65c7e6e9-7d6d-4483-a8bb-f507cb071ecb")
+	)
+	(label "SCL_3V3"
+		(at 608.33 402.59 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "47781917-226e-4c16-a94d-8194093c35af")
+	)
+	(label "SCL"
+		(at 608.33 400.05 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "7e8dcbd5-4a3c-485b-b23a-5e9420397e90")
+	)
+	(symbol
+		(lib_id "SolarCar:R")
+		(at 622.30 381.00 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cd5e066d-ca67-4be3-8da8-67a052be23d5")
+		(property "Reference" "R35"
+			(at 624.33 379.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 624.33 382.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 622.30 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 622.30 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 622.30 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 622.30 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 622.30 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d835f756-b537-4c47-90c6-5c412a36521f")
+		)
+		(pin "2"
+			(uuid "9087c098-2c2c-42c6-bac2-cdf696763d11")
+		)
+		(instances
+			(project "solar_car"
+				(path "/ee6cd591-c61e-556b-b77e-9a15f3bfb706"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "3V3_X"
+		(at 622.30 375.92 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "817cce45-325f-4930-b64c-9c7887182819")
+	)
+	(label "SDA_3V3"
+		(at 622.30 386.08 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "e7126098-7ab3-497e-973e-7f58b6ee3153")
+	)
+	(symbol
+		(lib_id "SolarCar:R")
+		(at 632.46 381.00 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7d40012b-bc53-418f-b4d6-e02bde0d05d1")
+		(property "Reference" "R36"
+			(at 634.49 379.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 634.49 382.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 632.46 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 632.46 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 632.46 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 632.46 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 632.46 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5e6a2bc-be87-41a5-a669-f9060006f73a")
+		)
+		(pin "2"
+			(uuid "7b371f6d-1b99-4840-b0dd-d5a7aa3106af")
+		)
+		(instances
+			(project "solar_car"
+				(path "/ee6cd591-c61e-556b-b77e-9a15f3bfb706"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "3V3_X"
+		(at 632.46 375.92 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "6a25ff3d-b184-454d-9e23-22a9ef4aa348")
+	)
+	(label "SCL_3V3"
+		(at 632.46 386.08 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "94142c09-6061-4a9b-b861-b52af3d77d72")
+	)
+	(symbol
+		(lib_id "SolarCar:R")
+		(at 642.62 381.00 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7198d70d-6e50-47ce-afa7-8853d2767416")
+		(property "Reference" "R37"
+			(at 644.65 379.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 644.65 382.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 642.62 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 642.62 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 642.62 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 642.62 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 642.62 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "538137a2-8557-4569-9afd-d979e25b6418")
+		)
+		(pin "2"
+			(uuid "50c30ad9-cc51-409f-8eb9-ff45a0e72638")
+		)
+		(instances
+			(project "solar_car"
+				(path "/ee6cd591-c61e-556b-b77e-9a15f3bfb706"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "+5V"
+		(at 642.62 375.92 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "880ee30c-87f1-4098-81fe-b5b0e679dbc3")
+	)
+	(label "SDA"
+		(at 642.62 386.08 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "ac456d48-58a3-49b5-9d2a-0f085eaa1f55")
+	)
+	(symbol
+		(lib_id "SolarCar:R")
+		(at 652.78 381.00 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1ccc7e5a-ec4b-491e-8d4e-13de151e968f")
+		(property "Reference" "R38"
+			(at 654.81 379.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 654.81 382.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 652.78 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 652.78 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 652.78 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 652.78 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 652.78 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a6f95ed9-5dab-438b-8af3-8f29722aa9f6")
+		)
+		(pin "2"
+			(uuid "32189240-efb8-4f83-be7c-0415faaec919")
+		)
+		(instances
+			(project "solar_car"
+				(path "/ee6cd591-c61e-556b-b77e-9a15f3bfb706"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "+5V"
+		(at 652.78 375.92 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "6594f129-ef62-4f16-a7bf-99939c8a8b76")
+	)
+	(label "SCL"
+		(at 652.78 386.08 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "50d7c695-4e82-45be-a0b5-87d00e459653")
+	)
+	(symbol
+		(lib_id "SolarCar:D")
+		(at 662.94 381.00 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8d6ef49c-cfda-4506-8a7b-7239dd540977")
+		(property "Reference" "D5"
+			(at 664.97 379.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS34"
+			(at 664.97 382.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 662.94 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 662.94 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Stops XIAO USB from back-powering the car"
+			(at 662.94 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SS34"
+			(at 662.94 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C8678"
+			(at 662.94 381.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c6c2699-a428-4f69-9b63-027e57ff7402")
+		)
+		(pin "2"
+			(uuid "35f897ab-0615-4c07-8cb2-5e5ac98c119d")
+		)
+		(instances
+			(project "solar_car"
+				(path "/ee6cd591-c61e-556b-b77e-9a15f3bfb706"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "XIAO_5V"
+		(at 662.94 375.92 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "4397d6be-1f65-41da-a078-3d5113e04671")
+	)
+	(label "+5V"
+		(at 662.94 386.08 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "39eeae5e-9afc-4a78-a7ca-62d8e52d8f07")
+	)
+	(symbol
+		(lib_id "SolarCar:XIAO_ESP32S3")
+		(at 690.88 391.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "1b20c3dd-9978-4b81-9f4d-be105c3321e8")
+		(property "Reference" "U6" (at 680.72 378.16 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "XIAO_ESP32S3" (at 680.72 404.16 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "SolarCar:XIAO_ESP32S3_THT" (at 690.88 391.16 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/" (at 690.88 391.16 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Description" "Seeed XIAO ESP32-S3, hand-soldered" (at 690.88 391.16 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "MPN" "XIAO ESP32S3" (at 690.88 391.16 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "" (at 690.88 391.16 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "64ab5662-41c0-48bd-aad6-d2ec48fc8224"))
+		(pin "2" (uuid "0500dd71-626b-45a8-9cca-79dc946f058b"))
+		(pin "3" (uuid "643ebcc4-0d8d-49b4-825b-e442927c362f"))
+		(pin "4" (uuid "de543120-fd04-4141-9750-ece303f63540"))
+		(pin "5" (uuid "d5ffeaf3-e8e7-4bbc-8ee8-b3b43a8dd608"))
+		(pin "6" (uuid "aafc4f4a-ada3-40eb-b95a-1c9f2359ba76"))
+		(pin "7" (uuid "7eea93ac-0fc6-4869-b59f-8efa87fe6a2a"))
+		(pin "8" (uuid "47e942f5-e2d3-475c-b3b9-46b9d727ae3f"))
+		(pin "9" (uuid "2a9a2962-c08f-4ae4-a181-d88001426fe9"))
+		(pin "10" (uuid "233773d7-1431-4f6c-870f-5d9ea01d3fc3"))
+		(pin "11" (uuid "597a376f-9681-4f1b-a5ee-bd133a30aea6"))
+		(pin "12" (uuid "0cd17008-68e1-4fc5-8e7e-30965569ab6b"))
+		(pin "13" (uuid "722687a5-c7f8-4001-8f2f-6315d825482d"))
+		(pin "14" (uuid "17af2b66-0d9c-433e-a432-bddf4fbc233a"))
+		(instances
+			(project "solar_car"
+				(path "/ee6cd591-c61e-556b-b77e-9a15f3bfb706"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 678.18 383.54)
+		(uuid "5a4b165f-51f4-4854-8ab7-bbf1e6e6b993")
+	)
+	(no_connect
+		(at 678.18 386.08)
+		(uuid "c784f2f6-9d4d-45d6-a241-f70af55055bc")
+	)
+	(no_connect
+		(at 678.18 388.62)
+		(uuid "c15c5a72-4e65-4e2e-b833-c08392044953")
+	)
+	(no_connect
+		(at 678.18 391.16)
+		(uuid "e361940b-ecd6-4d65-b275-d85d592a2dde")
+	)
+	(label "SDA_3V3"
+		(at 678.18 393.70 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "b5429691-21fb-473c-935c-dc3ef8c2a093")
+	)
+	(label "SCL_3V3"
+		(at 678.18 396.24 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "2a50df1d-900c-48a2-9e90-b6d9fa87af5a")
+	)
+	(no_connect
+		(at 678.18 398.78)
+		(uuid "6aca5a32-6207-4477-abcf-93824555a218")
+	)
+	(label "XIAO_5V"
+		(at 703.58 383.54 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "6753742b-fd17-4cc1-8418-f889376b1d5c")
+	)
+	(label "GND"
+		(at 703.58 386.08 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "9710b215-b67c-4acf-b2b9-cd2151a03d95")
+	)
+	(label "3V3_X"
+		(at 703.58 388.62 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "57c331c5-2010-41dd-a04c-64e01c094804")
+	)
+	(no_connect
+		(at 703.58 391.16)
+		(uuid "3d05a392-46fc-4007-bd51-7e0a948b1355")
+	)
+	(no_connect
+		(at 703.58 393.70)
+		(uuid "77dca713-83db-48ad-bdff-69c2527550cc")
+	)
+	(no_connect
+		(at 703.58 396.24)
+		(uuid "82ef4873-e695-4b79-89d5-8dba0fe8b317")
+	)
+	(no_connect
+		(at 703.58 398.78)
+		(uuid "f77d36ef-dcbe-436a-8b71-eabbce596ea8")
 	)
 	(sheet_instances
 		(path "/"

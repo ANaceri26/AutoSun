@@ -5,3 +5,4 @@ MAIN_SWITCH (external toggle),J4,PinHeader_1x02_P2.54mm_Vertical
 "HC-SR04 (VCC,TRIG,ECHO,GND)",J8,PinHeader_1x04_P2.54mm_Vertical
 "IR_RX (SIG,5V,GND)",J9,PinHeader_1x03_P2.54mm_Vertical
 "I2C spare (GND,5V,SDA,SCL)",J10,PinHeader_1x04_P2.54mm_Vertical
+XIAO_ESP32S3,U6,XIAO_ESP32S3_THT
