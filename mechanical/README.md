@@ -7,8 +7,9 @@ Two board versions. Both are the **same size, shape and hole positions**; only t
 ## Files to send
 | File | What it is | Opens in |
 |---|---|---|
-| `AutoSUN_A_board.step` | 3D model of version A with all parts | SolidWorks, Fusion 360, Inventor, FreeCAD, AutoCAD (3D import) |
-| `AutoSUN_B_board.step` | 3D model of version B with all parts | Same |
+| **`AutoSUN_A_simple.step`** | **Start here.** Simple 3D model of version A: one part (board with holes + plain blocks for every part, real sizes and heights) | SolidWorks, Fusion 360, Inventor, FreeCAD, AutoCAD |
+| **`AutoSUN_B_simple.step`** | Same for version B | Same |
+| `AutoSUN_A_detailed_assembly.step` / `..._B_...` | Detailed version, opens as an assembly of ~90 small parts. Only needed for a realistic render. | Same |
 | `AutoSUN_A_outline.dxf` | Flat 2D drawing: outline, 4 holes, plug locations | AutoCAD and any 2D CAD |
 | `AutoSUN_B_outline.dxf` | Same for version B (adds the motor module and 5 V module spots) | Same |
 
